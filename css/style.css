@@ -1,17 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
-*
-{font-family: 'Ubuntu', sans-serif;
+*{
+font-family: 'Ubuntu', sans-serif;
 }
-body 
+body {
+    background-image:  url("https://images.unsplash.com/photo-1464618663641-bbdd760ae84a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    width: 100vw;
+  }
+  
+ 
 .bannerBgImage{
     height: 100vh;
-    background: url("https://images.unsplash.com/photo-1548263594-a71ea65a8598?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1776&q=80");
+    background: url("https://images.unsplash.com/photo-1548263594-a71ea65a8598?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=876&q=80");
     background-size: cover;
     position: relative;
+    width: 100vw;
     
 }
 .bannertext{
-    text-align: center;
+    text-align: right;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -24,7 +35,6 @@ body
      -webkit-background-clip: text;
      background-position: -1500px,0;
      animation: backcolor 6s linear infinite alternate;
-
 }
 @keyframes backcolor{
     100%{
@@ -32,11 +42,9 @@ body
     }
 }
 
-
 #Certificates{
     padding: 50px;
     padding-left: 90px;
-    
 }
 .certificate-list{
     display: grid;
@@ -113,4 +121,12 @@ body
 {
     border: 3px solid black;
 }
-
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    width: 100vw;
+    padding: 13px;
+}
